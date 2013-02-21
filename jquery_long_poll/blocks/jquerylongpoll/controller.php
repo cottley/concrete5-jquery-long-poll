@@ -30,7 +30,7 @@
       $bv->setBlockObject($this->getBlockObject());
       $blockURL = $bv->getBlockURL();
       $html = Loader::helper('html');            
-      $this->addHeaderItem($html->javascript("json2.js"));
+      $this->addHeaderItem($html->javascript("{$blockURL}/json2.js"));
       $pg = Page::getCurrentPage();
       $this->set('isEditMode', $pg->isEditMode());
 		}
