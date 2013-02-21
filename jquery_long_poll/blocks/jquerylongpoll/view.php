@@ -20,8 +20,12 @@ if (!$isEditMode) {
         //Update your display with new data
         <?php echo $jscontent; ?>
 
-    }, dataType: "<?php echo $jsonURLType; ?>", complete: poll<?php echo $uniqueid; ?>, timeout: <?php echo $jsontimeout; ?> });
+    }, dataType: "<?php echo $jsonURLType; ?>", complete: poll<?php echo $uniqueid; ?>_withpause, timeout: <?php echo $jsontimeout; ?> });
 })();
+
+function poll<?php echo $uniqueid; ?>_withpause(){
+  setTimeout("poll<?php echo $uniqueid; ?>", 1000);
+}
 </script>
 <?php
 } else {
