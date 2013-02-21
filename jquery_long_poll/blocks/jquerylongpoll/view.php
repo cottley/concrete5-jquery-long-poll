@@ -24,7 +24,7 @@ if (!$isEditMode) {
 })();
 
 function poll<?php echo $uniqueid; ?>_withpause(){
-  setTimeout("poll<?php echo $uniqueid; ?>", 1000);
+  setTimeout("poll<?php echo $uniqueid; ?>()", 1000);
 }
 </script>
 <?php
