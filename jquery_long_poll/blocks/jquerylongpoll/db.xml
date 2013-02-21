@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+	<table name="btJquerylongpoll">
+		<field name="bID" type="I">
+			<key />
+			<unsigned />
+		</field>
+		<field name="jsonURL" type="C" size="255" ></field>
+		<field name="jsonURLType" type="C" size="255" ></field>
+    <field name="jscontent" type="X2"> </field>
+		<field name="jsontimeout" type="C" size="255" ></field>
+	</table>
+</schema>
